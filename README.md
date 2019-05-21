@@ -1,1 +1,2 @@
-# kennyrocker.github.io
+# JS TIMELINE WIDGET
+Javascript timeline module

@@ -1,0 +1,234 @@
+/* RESET CSS */
+  html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  b, u, i, center,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, embed, 
+  figure, figcaption, footer, header, hgroup, 
+  menu, nav, output, ruby, section, summary,
+  time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+  /* HTML5 display-role reset for older browsers */
+  article, aside, details, figcaption, figure, 
+  footer, header, hgroup, menu, nav, section {
+    display: block;
+  }
+  body {
+    line-height: 1;
+  }
+  ol, ul {
+    list-style: none;
+  }
+  blockquote, q {
+    quotes: none;
+  }
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+    content: '';
+    content: none;
+  }
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*  Timeline CSS */
+body{
+  padding: 0;
+  margin: 0;
+}
+
+.content {
+  position: relative;
+  z-index: 10;
+  padding:0;
+  margin:0;
+  font-family: arial;
+}
+.stage {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  
+}
+.stop {
+  position: relative;
+  clear:both;
+  
+}
+.left,.right,.mid {
+  position: relative;
+  z-index: 50;
+  float:left;
+
+}
+.left,.right {
+   width: calc(50% - 8px);
+   height: 100%;
+   background-color: #0de8fa;
+}
+.mid{
+  width:16px;
+  height: 100%;
+  background-color: tranparent;
+}
+.even .left, .even .right {
+  background-color: #0095fa;
+}
+
+.stop .info {
+  position: fixed;
+  height: 60%;
+  width: 30%;
+  right: 10%;
+  top: 20%;
+  z-index:350;
+  border-radius: 10px;
+  background-color: #333;
+  border: 5px dashed #697a86;
+  opacity:1;
+  color: #fafafa;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+
+  padding: 20px;
+  display: none;
+}
+.info .relative {
+  position: relative;
+}
+
+.info .company {
+  font-size: 28px;
+  padding-top: 10px;
+  padding-left: 20px;
+  color: #92ecfb;
+  padding-bottom: 4px;
+}
+
+.info title {
+  display: block;
+  font-size: 24px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  color: #fbf2c8;
+}
+.info article {
+  display: block;
+  line-height: 17px;
+  font-size: 14px;
+}
+.info article section {
+  padding-bottom: 5px;
+  padding-left: 20px;
+}
+
+.info ol {
+  list-style: outside;
+}
+
+.info li {
+  font-size: 18px;
+  padding: 5px 0;
+  line-height: 22px;
+  color: #fafafa;
+}
+
+.left .mark {
+  width: 35%;
+  position:relative;
+  border-bottom:5px dashed #fafafa;
+  float:right;
+  clear:both;
+}
+.mark .time {
+  position: absolute;
+  display: block;
+  left: -140px;
+  top: -40px;
+  color: #555;
+  color: #fafafa;
+  font-size:2rem;
+  font-size:32px;  
+  background-color: #333;
+  border: 5px dashed #50778a;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+
+.pointer {
+  z-index: 0;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: #50778a;
+}
+.cycle {
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  background-color: #fff;
+  z-index:299;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  left: 20px;
+  width: 0px;
+  height: 0px;
+  opacity: 0.7;
+  z-index: 300; 
+}
+.arrow.down {
+  border-width: 20px 15px 0 15px;
+  border-color: #009ce6 transparent transparent transparent;
+  border-style: solid dotted none;
+  top: 12px;  
+}
+.arrow.up {
+  border-color: transparent transparent #009ce6 transparent;
+  border-width: 0 15px 20px 15px;
+  border-style: solid dotted;
+  top: 38px;
+  display: none;
+}
+.arrow:hover {
+  opacity: 1;
+}
+
+.parallax {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+}
+.parallax .element {
+  position: relative;
+  background-color: #666;
+  height: 100px;
+  width: 200px;
+  text-align:center;
+  padding-top: 40px;
+  box-sizing:border-box;
+  opacity:0.2;
+  filter: alpha(opacity=20);
+  border-radius: 100px;
+  z-index: 50;
+  box-shadow: 5px 5px 2px #888888;
+}

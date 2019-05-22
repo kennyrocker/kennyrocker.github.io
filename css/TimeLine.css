@@ -86,7 +86,6 @@ body{
 .even .left, .even .right {
   background-color: #0095fa;
 }
-
 .stop .info {
   position: fixed;
   height: 60%;
@@ -133,11 +132,9 @@ body{
   padding-bottom: 5px;
   padding-left: 20px;
 }
-
 .info ol {
   list-style: outside;
 }
-
 .info li {
   font-size: 18px;
   padding: 5px 0;
@@ -166,8 +163,6 @@ body{
   border-radius: 10px;
   padding: 20px;
 }
-
-
 .pointer {
   z-index: 0;
   position: fixed;
@@ -231,4 +226,24 @@ body{
   border-radius: 100px;
   z-index: 50;
   box-shadow: 5px 5px 2px #888888;
+}
+@keyframes arrow {
+  0%   { opacity: 0.2; }
+  50%  { opacity: 0.7; }
+  100% { opacity: 0.2; }
+}
+@-webkit-keyframes arrow {
+  0%   { opacity: 0.2; }
+  50%  { opacity: 0.7; }
+  100% { opacity: 0.2; }
+}
+@-moz-keyframes arrow {
+  0%   { opacity: 0.2; }
+  50%  { opacity: 0.7; }
+  100% { opacity: 0.2; }
+}
+.arrow.down {
+  animation: arrow 2s infinite;
+  -moz-animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite;
 }

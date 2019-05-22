@@ -1,2 +1,1 @@
-# JS TIMELINE WIDGET
-Javascript timeline module
+# Kennyrocker's Coding Adventure

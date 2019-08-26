@@ -147,7 +147,6 @@
         <div class="mid"></div>
         <div class="right">
         </div>
-
           <div class="info">
               <div class="relative">
                   <div class="company">Springfree Trampoline</div>
@@ -166,21 +165,28 @@
                       </section>
                   </article>
               </div>
-          </div>
+          </div></div>
       </div>
-    
-    </div>
 
-  </div> 
-	
+   </div>
 
-<script src="js/TimeLine.js"></script>
-<script>
-    $(document).ready(function(){
-    	(function(){
-    		TimeLine();
-    	})();
-    });
-</script>
+   <script>
+       if (navigator.serviceWorker) {
+           window.addEventListener('load', function(){
+               navigator.serviceWorker
+                   .register('../pwa.js')
+                   .then(function(){ console.log('Service Worker :: Register')})
+                   .catch(function(err){ console.log('Service Worker Register :: ',err)})
+           });
+       }
+   </script>
+   <script src="js/TimeLine.js"></script>
+   <script>
+       $(document).ready(function(){
+           (function(){
+               TimeLine();
+           })();
+       });
+   </script>
 </body>
 </html>

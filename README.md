@@ -1,1 +1,0 @@
-# Kennyrocker's Coding Adventure

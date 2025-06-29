@@ -1,12 +1,17 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
-# compiled output
-/dist
-/tmp
-/out-tsc
+# source code
+/src
+/public
+
+#vite
+vite.config.js
+vite.prod.config.js
 
 # dependencies
 /node_modules
+package.json
+package-lock.json
 
 # profiling files
 chrome-profiler-events.json
@@ -14,12 +19,6 @@ speed-measure-plugin.json
 
 # IDEs and editors
 /.idea
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
 
 # IDE - VSCode
 .vscode/*
